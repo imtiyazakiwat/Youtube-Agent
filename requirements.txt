@@ -1,0 +1,7 @@
+flask==3.0.0
+gradio-client==0.6.1
+requests==2.31.0
+numpy==1.26.2
+together==0.2.11
+pathlib==1.0.1
+Pillow==10.0.0

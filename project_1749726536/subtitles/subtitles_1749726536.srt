@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:01,750
+[Scene: A bustling city street at dusk.
+
+2
+00:00:01,750 --> 00:00:02,500
+Upbeat music plays.
+
+3
+00:00:02,500 --> 00:00:05,000
+A person fumbles, drops an old flip phone, and sighs.
+
+4
+00:00:05,000 --> 00:00:07,750
+Cut to them holding a sleek, new iPhone, swiping and smiling.
+
+5
+00:00:07,750 --> 00:00:09,500
+Montage of iPhone features: maps, camera, apps.
+
+6
+00:00:09,500 --> 00:00:12,000
+Text on screen: "Welcome to the iPhone Era." Fade out.]

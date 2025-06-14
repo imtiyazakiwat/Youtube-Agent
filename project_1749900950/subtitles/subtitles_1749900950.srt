@@ -1,0 +1,58 @@
+1
+00:00:00,000 --> 00:00:00,250
+INT.
+
+2
+00:00:00,250 --> 00:00:03,000
+COMMAND CENTER - NIGHT
+
+将军 (General) paces, eyes on a map.
+
+3
+00:00:03,000 --> 00:00:03,750
+灯光 (Lights) flicker.
+
+4
+00:00:03,750 --> 00:00:04,500
+心跳声 (Heartbeats) echo.
+
+5
+00:00:04,500 --> 00:00:07,500
+将军: (into radio) 部队，准备行动。我们的时间到了。我们必须突破敌人的防线，夺回城市。每个人都要保持警惕，生死在此一搏。
+
+无线电静默。镜头拉远，展现外面的战备景象，士兵们静待命令，夜空中星光与战火交织。
+
+Translation:
+General paces, eyes on a map.
+
+6
+00:00:07,500 --> 00:00:08,000
+Lights flicker.
+
+7
+00:00:08,000 --> 00:00:08,500
+Heartbeats echo.
+
+8
+00:00:08,500 --> 00:00:10,000
+General: (into radio) Troops, get ready.
+
+9
+00:00:10,000 --> 00:00:11,000
+Our time has come.
+
+10
+00:00:11,000 --> 00:00:13,750
+We must break through the enemy’s lines and reclaim the city.
+
+11
+00:00:13,750 --> 00:00:16,250
+Everyone, stay alert; life and death hang in the balance.
+
+12
+00:00:16,250 --> 00:00:16,750
+Radio silence.
+
+13
+00:00:16,750 --> 00:00:22,250
+The camera pulls back, showing the preparation outside, soldiers awaiting orders, starlight mingling with the fires of war in the night sky.

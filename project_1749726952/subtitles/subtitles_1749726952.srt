@@ -1,0 +1,37 @@
+1
+00:00:00,000 --> 00:00:00,250
+INT.
+
+2
+00:00:00,250 --> 00:00:04,500
+ABANDONED HOUSE - NIGHT
+
+SHYAM and CHINKI, two curious children, huddle together, flashlights trembling in their hands.
+
+3
+00:00:04,500 --> 00:00:06,750
+Shadows loom as they explore the dusty, eerie rooms.
+
+4
+00:00:06,750 --> 00:00:08,000
+Suddenly, a floorboard creaks loudly.
+
+5
+00:00:08,000 --> 00:00:09,250
+CHINKI gasps, clutching SHYAM's arm.
+
+6
+00:00:09,250 --> 00:00:10,000
+They freeze, listening.
+
+7
+00:00:10,000 --> 00:00:11,500
+A soft whisper drifts from upstairs.
+
+8
+00:00:11,500 --> 00:00:15,000
+Eyes wide, they nod, silently agreeing to investigate, hearts pounding with excitement and fear.
+
+9
+00:00:15,000 --> 00:00:15,500
+FADE OUT.
