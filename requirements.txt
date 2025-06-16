@@ -1,7 +1,10 @@
-flask==3.0.0
-gradio-client==0.6.1
-requests==2.31.0
-numpy==1.26.2
-together==0.2.11
-pathlib==1.0.1
-Pillow==10.0.0
+google-generativeai>=0.3.0
+gradio-client>=0.10.0
+requests>=2.31.0
+ffmpeg-python>=0.2.0
+python-dotenv>=1.0.0
+flask>=3.0.0
+pathlib>=1.0.1
+shutil-which>=3.0.0
+concurrent-futures>=3.0.5
+logging>=0.5.1.2

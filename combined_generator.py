@@ -22,7 +22,7 @@ def generate_prompts():
 
         # Generate video prompt
         video_response = model.generate_content(
-            "Generate a creative and captivating 20-word video scene description. Focus on atmosphere, movement, and visual elements."
+            "Generate a creative and captivating 20-word video scene description. Focus on story, event, coutry , people , education etc and visual elements."
         )
         video_prompt = video_response.text.strip()
 
