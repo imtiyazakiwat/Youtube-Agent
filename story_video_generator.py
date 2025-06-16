@@ -152,24 +152,56 @@ class StoryVideoGenerator:
             logger.error(f"Error generating audio: {e}")
             raise
             
+    def generate_timed_subtitles(self, story_data):
+        """Generate subtitles with accurate timestamps using Gemini"""
+        try:
+            # Prepare the prompt with full story context
+            scenes_text = "\n\n".join([
+                f"Scene {i+1}:\nNarration: {scene['narration']}\nDuration: 6 seconds"
+                for i, scene in enumerate(story_data['scenes'])
+            ])
+            
+            prompt = f"""You are a subtitle timing expert. Create an SRT file with accurate timestamps for this story.
+            Each scene is exactly 6 seconds long. The scenes are:
+
+            {scenes_text}
+
+            Rules:
+            1. Each scene is exactly 6 seconds (from 00:00:00,000 to 00:00:06,000 for scene 1, 00:00:06,000 to 00:00:12,000 for scene 2, etc.)
+            2. Break down each scene's narration into natural phrases
+            3. Time each phrase to fit within its scene's 6-second window
+            4. Format as valid SRT with sequential numbers, timestamps, and text
+            5. Use proper SRT timestamp format (HH:MM:SS,mmm)
+            6. Keep phrases short enough to be easily readable
+            7. Ensure smooth transitions between scenes
+
+            Respond with ONLY the SRT content, no additional text."""
+
+            response = self.gemini_model.generate_content(prompt)
+            srt_content = response.text.strip()
+            
+            # Validate SRT format
+            if not srt_content.startswith("1\n"):
+                raise Exception("Invalid SRT format: Must start with subtitle number 1")
+            
+            # Save the SRT file
+            srt_path = self.dirs['subtitles'] / "story_subtitles.srt"
+            with open(srt_path, 'w', encoding='utf-8') as f:
+                f.write(srt_content)
+            
+            logger.info(f"Generated subtitles with accurate timestamps: {srt_path}")
+            return srt_path
+            
+        except Exception as e:
+            logger.error(f"Error generating timed subtitles: {e}")
+            raise
+
     def generate_subtitles(self, text, filename):
         """Generate SRT subtitles for the narration"""
         try:
-            response = requests.post(
-                "http://localhost:8000/generate-srt",
-                json={
-                    "script": text,
-                    "filename": filename
-                }
-            )
-            
-            if response.status_code != 200:
-                raise Exception(f"Subtitle generation failed: {response.text}")
-                
-            srt_path = self.dirs['subtitles'] / f"{filename}.srt"
-            with open(srt_path, 'wb') as f:
-                f.write(response.content)
-            return srt_path
+            # Instead of using the local SRT service, use our Gemini-based timing
+            story_data = json.loads((self.project_dir / 'story_script.json').read_text())
+            return self.generate_timed_subtitles(story_data)
             
         except Exception as e:
             logger.error(f"Error generating subtitles: {e}")
